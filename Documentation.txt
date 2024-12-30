@@ -1,0 +1,13 @@
+The form is made of 2 steps.
+-----
+first step is required to fill
+-----
+Second step is optional
+-----
+User cannot go to step 2 before submitting all the required info in step 1 
+-----
+When the user submits the info in step 1 the data gets saved as json inside database/json/data.json
+-----
+when user submits the second step all data saved from step 1 and 2 gets saved as a json field in the database alongside the user_id
+------
+after the data is stored in the db, we nullify all the data in the json file related to the user who just submitted the form in case they want to submit a new one (The json file acts like temporary storage) 
